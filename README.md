@@ -174,7 +174,7 @@ fi
 exit
 ```
 
-# Ejercicio 8
+## Ejercicio 8
 ### Nos dice al pulsar una tecla si es una letra, numero o caracter especial.
 
 
@@ -196,7 +196,7 @@ case $caracter in
 esac
 ```
 
-# Ejercicio 9
+## Ejercicio 9
 ### Recibe varios parametros y nos dice cuantos de esos parametros son de directorios y cuantos son archivos.
 
 ```
@@ -221,7 +221,7 @@ echo "Parametros introducidos $#"
 
 exit
 ```
-# Ejercicio 10
+## Ejercicio 10
 ### Mostramos menu, con productos para vender, luego nos pide que introduzcamos la opcion. luego mensaje que indica que introduzca moneda. Si ponemos precio exacto nos da mensaje, "Gracias buen provecho", si ponemos menos, nos diga falta. Si poner mas valor, nos indique el cambio con mensaje.
 
 ```
@@ -266,7 +266,7 @@ exit
 ```
 
 
-# Ejercicio 11
+## Ejercicio 11
 ### Nos pide introducir la ruta de un directorio por teclado y nos dice cuantos archivos y cuantos directorios hay dentro de ese directorio.
 ```
 #! /bin/bash
@@ -290,7 +290,7 @@ for x in `ls $directorio`;
 echo "Hay $contadorDir directorios y $contadorFichero ficheros"
 exit
 ```
-# Ejercicio 12
+## Ejercicio 12
 ### Introduce un número por parámetro y muestra su tabla de multiplicar
 ```
 #! /bin/bash
@@ -303,7 +303,7 @@ do
 done
 ```
 
-# Ejercicio 13
+## Ejercicio 13
 ### Limpia todas las reglas, y da permiso a todas las conexiones.
 ```
 #! /bin/bash
@@ -315,7 +315,7 @@ done
 exit
 ```
 
-# Ejercicio 14
+## Ejercicio 14
 ### Limpia todas las reglas, y prohíba cualquier conexión.
 ```
 #! /bin/bash
@@ -327,7 +327,7 @@ exit
 exit
 ```
 
-# Ejercicio 15
+## Ejercicio 15
 ### Tendrá 3 parámetros: red(ip), entrada-salida, aceptar-denegar. Dará estos permisos a iptables.
 ```
 #! /bin/bash
