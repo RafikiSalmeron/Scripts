@@ -290,3 +290,51 @@ for x in `ls $directorio`;
 echo "Hay $contadorDir directorios y $contadorFichero ficheros"
 exit
 ```
+# Ejercicio 12
+### Introduce un número por parámetro y muestra su tabla de multiplicar
+```
+#! /bin/bash
+
+echo "La tabla de multiplicar de $1 es: "
+for (( indice=0; indice<11; indice++ ))
+do
+   resultado=`expr $1 \* $indice`
+   echo "$1 x $indice = $resultado"
+done
+```
+
+# Ejercicio 13
+### Limpia todas las reglas, y da permiso a todas las conexiones.
+```
+#! /bin/bash
+
+`iptables -F`
+`iptables -I INPUT -j ACCEPT`
+`iptables -I OUTPUT -j ACCEPT`
+
+exit
+```
+
+# Ejercicio 14
+### Limpia todas las reglas, y prohíba cualquier conexión.
+```
+#! /bin/bash
+
+`iptables -F`
+`iptables -I INPUT -j REJECT`
+`iptables -I OUTPUT -j REJECT`
+
+exit
+```
+
+# Ejercicio 15
+### Tendrá 3 parámetros: red(ip), entrada-salida, aceptar-denegar. Dará estos permisos a iptables.
+```
+#! /bin/bash
+
+`iptables -A $2 -p tcp -s $1 -j $3`
+
+`service iptables restart`
+
+exit
+```
